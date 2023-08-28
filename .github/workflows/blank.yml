@@ -16,5 +16,5 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          cat /etc/debian_version
+          lsb_release -a
           
