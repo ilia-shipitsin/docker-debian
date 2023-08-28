@@ -17,6 +17,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           apt-get update
-          apt install lsb-core
+          apt install lsb-release
           lsb_release -a
           
