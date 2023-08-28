@@ -14,9 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a multi-line script
+      - name: Install lsb_release
         run: |
           apt-get update
           apt install lsb-release
+
+      - name: run lsb_release
+        run: |
           lsb_release -a
           
